@@ -1,0 +1,9 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/bill-e/*"
+  to = "/bill-e/index.html"
+  status = 200
+
