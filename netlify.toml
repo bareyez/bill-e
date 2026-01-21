@@ -2,6 +2,13 @@
   publish = "dist"
   command = "npm run build"
 
+# Redirect root to /bill-e/ for Netlify preview domain
+[[redirects]]
+  from = "/"
+  to = "/bill-e/"
+  status = 301
+
+# Handle SPA routing for /bill-e subdirectory
 [[redirects]]
   from = "/bill-e/*"
   to = "/bill-e/index.html"
